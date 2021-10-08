@@ -1,0 +1,12 @@
+version: '3'
+services:
+  gremlin-server:
+    image: tinkerpop/gremlin-server
+    ports:
+      - 8182:8182
+  # gremlin-console:
+  #   image: tinkerpop/gremlin-console
+  #   depends_on:
+  #     - gremlin-server
+  #   stdin_open: true
+  #   tty: true
